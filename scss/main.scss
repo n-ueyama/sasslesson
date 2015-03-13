@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* comment 変換後のcssに表示 */
+/* comment 変換後のcssに表示 */
+// comment 変換後のcssに表示されない
+// 変数：データにつけるラベル
+// データ型（数値、文字列、真偽、色、リスト）
+// + - * /
+// lighten darken
+// 条件分岐 @if @else
+// ループ
+// @for
+// @while
+
+// .fs10 { font-size: 10px; }
+
+$baseFontSize: 100px;
+$imgDir: "../img/";
+$brandColor: #ff0000;
+$debugMode: false;
+
+
+#main {
+    width: 50px;
+    font-size: inherit;
+    background: url("#{$imgDir}aaa.png");
+    @if $debugMode == true {
+        color: red;
+    } @else {
+        color: green;
+    }
+
+    @for $i from 10 through 14 {
+        .fs#{$i} { font-size: #{$i}px; }
+    }
+    p {
+        height: $baseFontSize;
+        color: darken($brandColor, 30%);
+        .sub {
+            font-size: #{12 + 12}px;
+        }
+    }
+}

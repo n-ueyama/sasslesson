@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* comment 変換後のcssに表示 */
+/* comment 変換後のcssに表示 */
+#main {
+  width: 50px;
+  font-size: inherit;
+  background: url("../img/aaa.png");
+  color: green;
+}
+#main .fs10 {
+  font-size: 10px;
+}
+#main .fs11 {
+  font-size: 11px;
+}
+#main .fs12 {
+  font-size: 12px;
+}
+#main .fs13 {
+  font-size: 13px;
+}
+#main .fs14 {
+  font-size: 14px;
+}
+#main p {
+  height: 100px;
+  color: #660000;
+}
+#main p .sub {
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=main.css.map */
